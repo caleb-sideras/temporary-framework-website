@@ -10,7 +10,7 @@ import "context"
 import "io"
 import "bytes"
 
-func HomeTempl(links []TLink2Hx, links2 []TLink2Href) templ.Component {
+func HomeTempl(links []TLink2, links2 []TLink2) templ.Component {
 	return templ.ComponentFunc(func(ctx context.Context, templ_7745c5c3_W io.Writer) (templ_7745c5c3_Err error) {
 		templ_7745c5c3_Buffer, templ_7745c5c3_IsBuffer := templ_7745c5c3_W.(*bytes.Buffer)
 		if !templ_7745c5c3_IsBuffer {
@@ -41,7 +41,7 @@ func HomeTempl(links []TLink2Hx, links2 []TLink2Href) templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(link.HxGet))
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(link.Href))
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -61,7 +61,17 @@ func HomeTempl(links []TLink2Hx, links2 []TLink2Href) templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" hx-boost=\"true\"></t-link-2>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\"")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			if link.HxBoost {
+				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(" hx-boost=\"true\"")
+				if templ_7745c5c3_Err != nil {
+					return templ_7745c5c3_Err
+				}
+			}
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("></t-link-2>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
@@ -104,7 +114,17 @@ func HomeTempl(links []TLink2Hx, links2 []TLink2Href) templ.Component {
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
-			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\"></t-link-2>")
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\"")
+			if templ_7745c5c3_Err != nil {
+				return templ_7745c5c3_Err
+			}
+			if link.HxBoost {
+				_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(" hx-boost=\"true\"")
+				if templ_7745c5c3_Err != nil {
+					return templ_7745c5c3_Err
+				}
+			}
+			_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("></t-link-2>")
 			if templ_7745c5c3_Err != nil {
 				return templ_7745c5c3_Err
 			}
