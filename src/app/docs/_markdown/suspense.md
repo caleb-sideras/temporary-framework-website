@@ -53,6 +53,7 @@ templ Spinner(){
 ```
 
 1. The client will first receive the `<md-circular-progress></md-circular-progress>`
+
 2. Once fetching/rendering is completed with `RandomNumber`, the output (e.g. `<h1>21</h1>`) will be swapped into the dom.
 
 
