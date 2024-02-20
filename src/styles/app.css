@@ -659,11 +659,13 @@ h1 {
   color: var(--md-sys-color-on-secondary);
 }
 
+/**
 @media (min-width: 640px) {
   .example-body {
     width: auto;
   }
 }
+**/
 
 .list-item {
   display: flex;
