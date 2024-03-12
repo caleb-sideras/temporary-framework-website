@@ -47,8 +47,11 @@ desktop.ini    # Windows
 # Build files
 static/css/*
 static/html/*
+static/html/etag_file.txt
 static/js/*
 msc/*
+out
+output.log
 
 touch static/html/.gitkeep
 touch static/js/.gitkeep

@@ -5,7 +5,7 @@ import (
 )
 
 // Server Component
-func Index() templ.Component {
+func Index_() templ.Component {
 	// perform server-side logic -> fetch data, mutations, etc
 
 	return IndexTempl()

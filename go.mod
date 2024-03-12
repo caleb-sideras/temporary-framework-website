@@ -1,9 +1,10 @@
 module calebsideras.com/temporary
 
+// go 1.22.1
 go 1.21.3
 
 require (
-	github.com/a-h/templ v0.2.432
+	github.com/a-h/templ v0.2.598
 	github.com/google/uuid v1.4.0
 	github.com/gorilla/mux v1.8.1
 )
