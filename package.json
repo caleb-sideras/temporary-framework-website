@@ -16,8 +16,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "@material/web": "1.0.0",
     "element-internals-polyfill": "1.3.10",
+=======
+    "@material/web": "^1.0.1",
+    "element-internals-polyfill": "^1.3.10",
+>>>>>>> e30f7ab8356a4e1394374dd36a386955f4a677dc
     "lit": "^3.1.0"
   },
   "devDependencies": {
