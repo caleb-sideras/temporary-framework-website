@@ -9,3 +9,7 @@ type TLinkContent struct {
 	Boost       string
 	Disabled    bool
 }
+
+type Hello struct {
+	Name string
+}

@@ -190,7 +190,7 @@ func main() {
 
 7. remove mux handler
 
-8. render paths to have handletype
+8. render paths to have handletype - tick
 
 9. metadata api
 

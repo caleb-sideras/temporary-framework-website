@@ -1,10 +1,13 @@
 package main
 
 import (
-	temp "calebsideras.com/temporary/temporary"
 	"fmt"
 	"net/http"
 	"os"
+
+	"calebsideras.com/temporary/src/utils"
+	temp "calebsideras.com/temporary/temporary"
+
 	// "reflect"
 	"github.com/gorilla/mux"
 )
@@ -23,17 +26,19 @@ func main() {
 	// t := temp.Temp{}
 	// test(nil)
 	// test(temporary)
-	type hello struct {
-		name string
-	}
+	// test := func(h hello){
+	// 	fmt.Println(h.name)
+	// }
+	// test2 := func(h interface{}){
+	// 	test(h)
+	// }
 
 	if len(os.Args) > 1 {
-
-		t := temp.NewTemp(hello{"bossman"})
+		t := temp.NewTemp(utils.Hello{"bossman"})
 
 		switch os.Args[1] {
 		case "build":
-			// t.Build()
+			t.Build()
 
 		case "render":
 			t.Render()
