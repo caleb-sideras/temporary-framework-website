@@ -13,3 +13,12 @@ type TLinkContent struct {
 type Hello struct {
 	Name string
 }
+
+type Hello2 struct {
+	Name string
+}
+
+type Hello3 struct {
+	Hello
+	Hello2
+}

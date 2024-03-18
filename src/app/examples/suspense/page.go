@@ -1,16 +1,18 @@
 package examples_suspense
 
 import (
-	"log"
+	// "log"
 
 	"calebsideras.com/temporary/src/components/server"
-	"calebsideras.com/temporary/src/utils"
+	// "calebsideras.com/temporary/src/utils"
 	"github.com/a-h/templ"
 )
 
-func Page(dep interface{}) templ.Component {
-	boss := dep.(utils.Hello)
-	log.Println("MRBEAST:", boss)
+func Page() templ.Component {
+
+	// dep utils.Hello3
+	// boss := dep.Hello.Name
+	// log.Println("MRBEAST:", boss)
 
 	return server.ProjectTab(server.ProjectTabType{
 		Title:       "Suspense",
