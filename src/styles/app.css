@@ -659,14 +659,6 @@ h1 {
   color: var(--md-sys-color-on-secondary);
 }
 
-/**
-@media (min-width: 640px) {
-  .example-body {
-    width: auto;
-  }
-}
-**/
-
 .list-item {
   display: flex;
   justify-content: space-between;
@@ -676,6 +668,22 @@ h1 {
 
 .list-item-text {
   margin: auto 0;
+}
+
+/**
+  * --- COUNTER EXAMPLE ---
+**/
+
+.counter-example {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 22px;
+}
+
+.counter-example span {
+  font-weight: bold;
 }
 
 /**

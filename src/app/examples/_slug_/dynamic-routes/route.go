@@ -1,12 +1,11 @@
 package examples_dynamicroutes
 
 import (
-	"net/http"
-
 	"calebsideras.com/temporary/src/components/server"
 	"calebsideras.com/temporary/src/utils"
 	"github.com/a-h/templ"
 	"github.com/gorilla/mux"
+	"net/http"
 )
 
 func Example(w http.ResponseWriter, r *http.Request) templ.Component {

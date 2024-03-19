@@ -14,10 +14,24 @@ import (
 func main() {
 
 	if len(os.Args) > 1 {
-		t := temp.NewTemp(utils.Hello3{utils.Hello{Name: "bossman"}, utils.Hello2{Name: "bossman"}})
+
+		appConfig := utils.AppConfig{
+			AppName: "Temporary-Website",
+			// examples
+			APIKey: "s3cr3t-k3y",
+			OtherSettings: map[string]string{
+				"featureFlag": "true",
+				"maxUsers":    "1000",
+			},
+		}
+
+		config := utils.InitConfig(appConfig, "localhost:6379")
+
+		t := temp.NewTemp(config)
+
 		switch os.Args[1] {
 		case "build":
-			t.Build()
+			// t.Build()
 
 		case "render":
 			t.Render()

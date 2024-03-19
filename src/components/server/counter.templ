@@ -1,0 +1,15 @@
+package server
+
+import "calebsideras.com/temporary/src/utils"
+
+templ Counter(appConf utils.AppConfig, number string) {
+	<div class="counter-example">
+		<div>There have been: <span>{ number }</span> visitors to this page!</div>
+		<h3>AppConfig</h3>
+		<div>AppName: <span>{ appConf.AppName }</span></div>
+		<div>APIKey: <span>{ appConf.APIKey }</span> (never do this!!!)</div>
+		<div>OtherSettings:</div>
+		<div style="text-indent: 25px;">featureFlag: <span>{ appConf.OtherSettings["featureFlag"] }</span></div>
+		<div style="text-indent: 25px;">maxUsers: <span>{ appConf.OtherSettings["maxUsers"] }</span></div>
+	</div>
+}
