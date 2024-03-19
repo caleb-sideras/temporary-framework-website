@@ -83,10 +83,6 @@ This project is licensed under the MIT License.
 
 ## TODO
 
-1. Example routes are always returning the whole page
-    - navigating between dynamic routes and regular routes throws off temporary -> returning whole page
-    - why are we using the path passed in from request object opposed to the path we have from searching the dir?
-
 2. Delete/create default files on BUILD - > html/css/js delete 
     - so we dont want to just delete all the files in this dir - simply because users might add shit to this?
     - store files we saved so we can remove them?
@@ -99,98 +95,9 @@ This project is licensed under the MIT License.
 
 5. Fix mobile titles length
 
-6. dependency injection (it works?)
-
-- Idea 1
-
-Use of closures
-
-NOTE
-ok full rewrite needed (dont be consumed by it caleb, still chess, leet and jobs) - thanks!
-but we want static routes/pages/indexs to ALL take a w, r, dep objects
-so for indexs, they need to take the objects and pass it too their children (if it has)
-
-1. user defines struct
-2. user creates object of struct type
-3. user passes object into `NewTemp` function
-4. Temporary finds type of this object
-
-```go
-type MyStruct struct {
-	Field string
-}
-
-func PrintType(v interface{}) {
-	t := reflect.TypeOf(v)
-	fmt.Println("Type of v:", t)
-}
-
-func main() {
-	myStructInstance := MyStruct{Field: "Hello, Go!"}
-	PrintType(myStructInstance)  
-
-
-// Type of v: main.MyStruct
-```
-
-5. Temporary (while traversing the dirs) finds functions that export a http.HandlerFunc vs templ.Component
-6. If there is a param of this type, it passes this object into the handler func
-NOTE: ok but it looks like we still need to checl the params of the closure function?
-
-```go
-package handlers
-
-func Page(w http.ResponseWriter, r *http.Request) templ.Component{
-		return Component()
-}
-
-func Page(userStruct UserStruct) templ.Component{
-		return Component()
-}
-
-func Page(w http.ResponseWriter, r *http.Request, userStruct UserStruct) templ.Component{
-		return Component()
-}
-
-func Page() templ.Component{
-		return Component()
-}
-
-
-or
-
-func Page(w http.ResponseWriter, r *http.Request) templ.Component {
-}
-
-
-func main() {
-    db, _ := sql.Open("your_db_driver", "your_db_datasource")
-
-    struct UserStruct{
-      db *sql.DB
-    }
-
-    userStruct := UserStruct{
-      db,
-      other
-    }
-    
-		t := temp.NewTemp(userStruct)
-
-    func NewTemp(generic T) *Temp {
-    	return &Temp{generic T}
-    }
-
-    // handled by temporary
-    http.HandleFunc("/your-route", handlers.Page(userStruct))
-    http.HandleFunc("/your-route", handlers.Page())
-    http.ListenAndServe(":8080", nil)
-}
-```
+6. docs -> example dependancy, explain build process
 
 7. remove mux handler
-
-8. render paths to have handletype - tick
 
 9. metadata api
 

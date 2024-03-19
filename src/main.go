@@ -31,7 +31,7 @@ func main() {
 
 		switch os.Args[1] {
 		case "build":
-			// t.Build()
+			t.Build()
 
 		case "render":
 			t.Render()
