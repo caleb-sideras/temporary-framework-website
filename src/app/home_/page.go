@@ -11,6 +11,27 @@ type TLink2 struct {
 	HxBoost     bool
 }
 
+var Metadata []string = []string{
+	// HTML Tags
+	`<title>Temporary</title>`,
+	`<meta name="description" content="The HTMX and Templ Framework you are looking for."/>`,
+
+	// OG Tags
+	`<meta property="og:url" content="https://temporary-framework.org"/>`,
+	`<meta property="og:type" content="website"/>`,
+	`<meta property="og:title" content="Temporary"/>`,
+	`<meta property="og:description" content="The HTMX and Templ Framework you are looking for."/>`,
+	`<meta property="og:image" content="https://temporary-framework.org/static/assets/temporary.png"/>`,
+
+	// Twitter Tags
+	`<meta name="twitter:card" content="summary_large_image"/>`,
+	`<meta property="twitter:domain" content="temporary-framework.org"/>`,
+	`<meta property="twitter:url" content="https://temporary-framework.org"/>`,
+	`<meta name="twitter:title" content="Temporary"/>`,
+	`<meta name="twitter:description" content="The HTMX and Templ Framework you are looking for."/>`,
+	`<meta name="twitter:image" content="https://temporary-framework.org/static/assets/temporary.png"/>`,
+}
+
 func Page_() templ.Component {
 
 	links := []TLink2{

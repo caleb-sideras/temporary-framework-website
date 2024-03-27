@@ -100,6 +100,9 @@ This project is licensed under the MIT License.
 7. remove mux handler
 
 9. metadata api
+  - sending <head> & <div id="msc"> and performing `hx-select="#msc"` and using htmx `head-extention` to swap head (always with merge)
+  - index & page metadata exported var (on full page render, we must iterate over the output and find &/or insert the head) NOTE: this will be difficult with nested indexs
+  - index <head> inside return must have `hx-preserve="true"` or `hx-head="re-eval"` (leave up to the user) make by default?
 
 10. more route level ui
 

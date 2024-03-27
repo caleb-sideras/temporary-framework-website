@@ -23,7 +23,7 @@ func IndexTempl() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><script type=\"module\" src=\"/static/js/index.js\"></script><link href=\"/static/css/output.css\" rel=\"stylesheet\"><script src=\"https://unpkg.com/htmx.org@2.0.0-alpha1/dist/htmx.min.js\"></script><link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap\" rel=\"stylesheet\"><link href=\"/static/css/prism.css\" rel=\"stylesheet\"><script src=\"/static/js/prism.js\"></script><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\"><!-- HTML Meta Tags --><title>Temporary</title><meta name=\"description\" content=\"The HTMX and Templ Framework you are looking for.\"><!-- Facebook Meta Tags --><meta property=\"og:url\" content=\"https://temporary-framework.org\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:title\" content=\"Temporary\"><meta property=\"og:description\" content=\"The HTMX and Templ Framework you are looking for.\"><meta property=\"og:image\" content=\"https://temporary-framework.org/static/assets/temporary.png\"><!-- Twitter Meta Tags --><meta name=\"twitter:card\" content=\"summary_large_image\"><meta property=\"twitter:domain\" content=\"temporary-framework.org\"><meta property=\"twitter:url\" content=\"https://temporary-framework.org\"><meta name=\"twitter:title\" content=\"Temporary\"><meta name=\"twitter:description\" content=\"The HTMX and Templ Framework you are looking for.\"><meta name=\"twitter:image\" content=\"https://temporary-framework.org/static/assets/temporary.png\"></head><body class=\"dark\"><header>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html lang=\"en\"><head><!-- BROWSER --><meta charset=\"UTF-8\" hx-preserve=\"true\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" hx-preserve=\"true\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" hx-preserve=\"true\"><!-- MY STUFF --><script type=\"module\" src=\"/static/js/index.js\" hx-preserve=\"true\"></script><link href=\"/static/css/output.css\" rel=\"stylesheet\" hx-preserve=\"true\"><!-- HTMX --><script src=\"https://unpkg.com/htmx.org@2.0.0-beta2/dist/htmx.min.js\" hx-preserve=\"true\"></script><script src=\"https://unpkg.com/htmx.org@1.9.11/dist/ext/head-support.js\" hx-preserve=\"true\"></script><link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap\" rel=\"stylesheet\" hx-preserve=\"true\"><!-- PRISM --><link href=\"/static/css/prism.css\" rel=\"stylesheet\" hx-preserve=\"true\"><script src=\"/static/js/prism.js\" hx-preserve=\"true\"></script><!-- GOOGLE --><link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\" hx-preserve=\"true\"></head><body class=\"dark\"><header>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -35,7 +35,7 @@ func IndexTempl() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</header><div class=\"main_container\"><main>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("</header><div class=\"main_container\" hx-ext=\"head-support\"><main>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -91,7 +91,7 @@ func Navigation() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" href=\"/examples/_replace-me_/dynamic-routes\" hx-boost=\"true\">Dynamic Routing</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/static-render\" hx-boost=\"true\">Static Render</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/dependency-injection\" hx-boost=\"true\">Dependency Injection</temporary-list-item></t-navigation-drawer><div slot=\"footer\">")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" href=\"/examples/_replace-me_/dynamic-routes\" hx-boost=\"true\">Dynamic Routing</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/static-render\" hx-boost=\"true\">Static Render</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/dependency-injection\" hx-boost=\"true\">Dependency Injection</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/metadata\" hx-boost=\"true\">Metadata</temporary-list-item></t-navigation-drawer><div slot=\"footer\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
@@ -151,7 +151,7 @@ func MobileNavigation() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" href=\"/examples/_replace-me_/dynamic-routes\" hx-boost=\"true\">Dynamic Routing</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/static-render\" hx-boost=\"true\">Static Render</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/dependency-injection\" hx-boost=\"true\">Dependency Injection</temporary-list-item></t-mobile-navigation-drawer><div slot=\"footer\">")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("\" href=\"/examples/_replace-me_/dynamic-routes\" hx-boost=\"true\">Dynamic Routing</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/static-render\" hx-boost=\"true\">Static Render</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/dependency-injection\" hx-boost=\"true\">Dependency Injection</temporary-list-item> <temporary-list-item interactive border type=\"link\" href=\"/examples/metadata\" hx-boost=\"true\">Metadata</temporary-list-item></t-mobile-navigation-drawer><div slot=\"footer\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
