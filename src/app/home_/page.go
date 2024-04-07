@@ -48,9 +48,9 @@ func Page_() templ.Component {
 			HxBoost:     true,
 		},
 		{
-			Href:        "/docs/routing/pages-and-index",
+			Href:        "/docs/optimizing/rendering",
 			Title:       "Server Components",
-			Description: "Add Templ Components without the need to handle rendering or routing.",
+			Description: "Add Templ Components without the need to handle a rendering pipeline or routing.",
 			HxBoost:     true,
 		},
 		{
@@ -60,13 +60,13 @@ func Page_() templ.Component {
 			HxBoost:     true,
 		},
 		{
-			Href:        "/docs/routing/suspense",
+			Href:        "/docs/optimizing/suspense",
 			Title:       "Lazy Loading",
 			Description: "Instantly load UI from the server and lazy load your content.",
 			HxBoost:     true,
 		},
 		{
-			Href:        "/docs/routing/caching",
+			Href:        "/docs/optimizing/caching",
 			Title:       "Caching",
 			Description: "Never have redundant or stale HTML sent to the client.",
 			HxBoost:     true,
@@ -75,6 +75,18 @@ func Page_() templ.Component {
 			Href:        "/docs/routing/hx-boost",
 			Title:       "hx-boost",
 			Description: "hx-boost overide to provide an even better SPA feel.",
+			HxBoost:     true,
+		},
+		{
+			Href:        "/docs/optimizing/metadata",
+			Title:       "hx-boost",
+			Description: "Dynamically set metadata.",
+			HxBoost:     true,
+		},
+		{
+			Href:        "/docs/routing/dependency-injection",
+			Title:       "Dependency Injection",
+			Description: "Inject dependencies that are accessible in your handlers.",
 			HxBoost:     true,
 		},
 	}

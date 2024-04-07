@@ -110,6 +110,8 @@ This project is licensed under the MIT License.
 
 12. chunking of js
 
+13. DYNAMIC ROUTES INDEX ISSUE -> returns whole page!!!
+
 ## REGEX double example
 
 ```regex

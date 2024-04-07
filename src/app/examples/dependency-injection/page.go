@@ -34,7 +34,7 @@ func Page(w http.ResponseWriter, r *http.Request, conf utils.Config) templ.Compo
 
 	return server.ProjectTab(server.ProjectTabType{
 		Title:       "Dependency Injection",
-		ProjectURL:  "",
+		ProjectURL:  "/docs/routing/dependency-injection",
 		ReadMeURL:   "/examples/dependency-injection/example",
 		VideoURL:    "/examples/dependency-injection/code",
 		InitialBody: Example(w, r, conf),

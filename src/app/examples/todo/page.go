@@ -8,13 +8,13 @@ import (
 var Metadata []string = []string{
 
 	// HTML Tags
-	"<title>Temporary - Examples - Todo</title>",
+	"<title>Examples: Todo | Temporary</title>",
 	`<meta name="description" content="Simple Todo List">`,
 
 	// OG Tags
 	`<meta property="og:url" content="https://temporary-framework.org/examples/todo">`,
 	`<meta property="og:type" content="website">`,
-	`<meta property="og:title" content="Temporary - Examples - Todo">`,
+	`<meta property="og:title" content="Examples: Todo | Temporary">`,
 	`<meta property="og:description" content="Simple Todo List">`,
 	`<meta property="og:image" content="https://temporary-framework.org/static/assets/temporary.png">`,
 
@@ -22,7 +22,7 @@ var Metadata []string = []string{
 	`<meta name="twitter:card" content="summary_large_image">`,
 	`<meta property="twitter:domain" content="temporary-framework.org">`,
 	`<meta property="twitter:url" content="https://temporary-framework.org/examples/todo">`,
-	`<meta name="twitter:title" content="Temporary - Examples - Todo">`,
+	`<meta name="twitter:title" content="Examples: Todo | Temporary">`,
 	`<meta name="twitter:description" content="Simple Todo List">`,
 	`<meta name="twitter:image" content="https://temporary-framework.org/static/assets/temporary.png">`,
 }

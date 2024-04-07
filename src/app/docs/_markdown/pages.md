@@ -2,7 +2,7 @@
 
 A page is UI that is unique to a route. You can define pages by exporting a component from a `page.go` file. Use nested folders to define a route and a `page.go` file to make the route publicly accessible.
 
-Create your first page by adding a page.go file inside the app directory:
+Create your first page by adding a `page.go` file inside the app directory:
 
 ```
 app                  (1)
@@ -27,7 +27,7 @@ func Page(w http.ResponseWriter, r *http.Request) templ.Component {
 }
 
 templ HelloWorld(){
-  <h1>Hello, Example!</h1>
+  <h1>Hello World</h1>
 }
     
 ```

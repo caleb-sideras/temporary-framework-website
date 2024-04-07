@@ -59,6 +59,10 @@ templ HelloWorld(){
   
 ```
 
+By default, Temporary treats all routes defined in `pages.go` as dynamic. This approach ensures that your functions are executed with each request, allowing all operations (like data fetching and mutations) to occur in real-time, thereby guaranteeing the most current data.
+
+Page functions are not required to have any parameters. You may omit them if they are not used.
+
 ### Good to know:
 
 - A page is always the leaf of the route subtree.
@@ -74,7 +78,7 @@ templ HelloWorld(){
 
 A index is UI that is shared between multiple pages. On navigation, indexs by __default__ do not preserve state and re-render. Indexs can also be nested.
 
-You can define an index by exporting a `Templ` component from a `index.go` file. The `Templ` component should have a `{children...}` expression that is passed into it for it wrap - which will be populated with a child page during rendering.
+You can define an index by exporting a `Templ` component from a `index.go` file. The `Templ` component should have a `{children...}` expression that is passed into it for it to wrap - which will be populated with a child page during rendering.
 
 ```
 app                  (1)
@@ -111,6 +115,10 @@ templ IndexTempl(){
 }
   
 ```
+
+By default, Temporary treats all routes defined in `index.go` as dynamic. This approach ensures that your functions are executed with each request, allowing all operations (like data fetching and mutations) to occur in real-time, thereby guaranteeing the most current data.
+
+Page functions are not required to have any parameters. You may omit them if they are not used.
 
 ### Good to know:
 
