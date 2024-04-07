@@ -79,7 +79,7 @@ func Page_() templ.Component {
 		},
 		{
 			Href:        "/docs/optimizing/metadata",
-			Title:       "hx-boost",
+			Title:       "Metadata",
 			Description: "Dynamically set metadata.",
 			HxBoost:     true,
 		},

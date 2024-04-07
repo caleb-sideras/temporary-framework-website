@@ -72,15 +72,12 @@ templ Navigation() {
 			<temporary-list-item interactive border type="link" href="/docs/project-structure" hx-boost="true">
 				Project Structure
 			</temporary-list-item>
-
 			<t-dropdown>
-
 				<t-dropdown-title border hide-event slot="title">
 					<div slot="headline">Routing</div>
 					<md-icon slot="active">arrow_drop_up</md-icon>
 					<md-icon slot="inactive">arrow_drop_down</md-icon>
 				</t-dropdown-title>
-
 				<t-dropdown-list slot="content">
 					<t-dropdown-list-item interactive border type="link" href="/docs/routing" hx-boost="true">
 						Fundamentals
@@ -110,18 +107,13 @@ templ Navigation() {
 						Templ
 					</t-dropdown-list-item>
 				</t-dropdown-list>
-
 			</t-dropdown>
-
-
 			<t-dropdown>
-
 				<t-dropdown-title border hide-event slot="title">
 					<div slot="headline">Optimizing</div>
 					<md-icon slot="active">arrow_drop_up</md-icon>
 					<md-icon slot="inactive">arrow_drop_down</md-icon>
 				</t-dropdown-title>
-
 				<t-dropdown-list slot="content">
 					<t-dropdown-list-item interactive border type="link" href="/docs/optimizing/rendering" hx-boost="true">
 						Rendering
@@ -139,11 +131,8 @@ templ Navigation() {
 						Caching
 					</t-dropdown-list-item>
 				</t-dropdown-list>
-
 			</t-dropdown>
-
 		</t-navigation-drawer>
-
 		<t-navigation-drawer slot="drawer">
 			<temporary-list-item interactive border type="link" href="/examples/todo" hx-boost="true">
 				Todo
@@ -187,7 +176,6 @@ templ MobileNavigation() {
 			</temporary-list-item>
 		</t-mobile-navigation-rail>
 		<t-mobile-navigation-drawer slot="drawer">
-
 			<temporary-list-item interactive border type="link" href="/docs" hx-boost="true">
 				Introduction
 			</temporary-list-item>
@@ -197,7 +185,6 @@ templ MobileNavigation() {
 			<temporary-list-item interactive border type="link" href="/docs/project-structure" hx-boost="true">
 				Project Structure
 			</temporary-list-item>
-
 			<t-dropdown>
 				<t-dropdown-title border hide-event slot="title">
 					<div slot="headline">Routing</div>
@@ -234,13 +221,13 @@ templ MobileNavigation() {
 					</t-dropdown-list-item>
 				</t-dropdown-list>
 			</t-dropdown>
-
 			<t-dropdown>
 				<t-dropdown-title border hide-event slot="title">
 					<div slot="headline">Optimizing</div>
 					<md-icon slot="active">arrow_drop_up</md-icon>
 					<md-icon slot="inactive">arrow_drop_down</md-icon>
 				</t-dropdown-title>
+				<t-dropdown-list slot="content">
 					<t-dropdown-list-item interactive border type="link" href="/docs/optimizing/rendering" hx-boost="true">
 						Rendering
 					</t-dropdown-list-item>
@@ -256,10 +243,9 @@ templ MobileNavigation() {
 					<t-dropdown-list-item interactive border type="link" href="/docs/optimizing/caching" hx-boost="true">
 						Caching
 					</t-dropdown-list-item>
+				</t-dropdown-list>
 			</t-dropdown>
-
 		</t-mobile-navigation-drawer>
-
 		<t-mobile-navigation-drawer slot="drawer">
 			<temporary-list-item interactive border type="link" href="/examples/todo" hx-boost="true">
 				Todo
@@ -275,9 +261,6 @@ templ MobileNavigation() {
 			</temporary-list-item>
 			<temporary-list-item interactive border type="link" href="/examples/dependency-injection" hx-boost="true">
 				Dependency Injection
-			</temporary-list-item>
-			<temporary-list-item interactive border type="link" href="/examples/metadata" hx-boost="true">
-				Metadata
 			</temporary-list-item>
 		</t-mobile-navigation-drawer>
 		<div slot="footer">
